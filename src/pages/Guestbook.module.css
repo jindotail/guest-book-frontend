@@ -1,0 +1,158 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Galada&family=Gowun+Batang&family=Poor+Story&family=Yeon+Sung&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+.guestbook {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(106.37deg, #dfe8ff 29.63%, #f3c6f1 51.55%, #ffcfd1 90.85%);
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px 18px 0 0;
+}
+
+.header>button {
+    width: 60px;
+    height: 25px;
+    border: none;
+    background-Color: rgba(255, 235, 235, 0.84);
+    font-weight: 700;
+    font-size: 12px;
+    box-shadow: rgb(187, 187, 187) 0px 3px 10px 0px;
+    cursor: pointer;
+}
+
+.header>button:hover {
+    background-Color: rgb(255, 255, 255);
+}
+
+.title {
+    margin: 5px 0;
+    color: #453a3a;
+    font-size: 50px;
+    /* font-family: 'Galada', cursive; */
+    font-family: 'Cafe24Ssurround';
+    font-weight: 700;
+}
+
+.container {
+    width: 60vw;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(187, 187, 187) 0px 10px 20px 0px;
+    border-radius: 30px;
+}
+
+.contents {
+    height: 80%;
+    padding: 20px;
+    /* background-color: rgb(0, 0, 255); */
+
+    /*스크롤바 기능 유지하지만 화면상 보이지 않게 하기 */
+
+    /* for Internet Explorer, Edge */
+    -ms-overflow-style: none;
+    /* for Firefox */
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+.contents::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+.inputBox {
+    height: 10%;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.input {
+    height: 30px;
+    width: 80%;
+    border-radius: 10px;
+    border: 0px solid;
+    box-shadow: 1px 1px 8px 1px #dadce0 inset;
+}
+
+.input:focus {
+    outline: 1px solid #bdbdbd;
+}
+
+.submitButton {
+    height: 30px;
+    margin-left: 10px;
+    color: #3c4043;
+    background-color: rgba(186, 186, 186, 0.14);
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, .2) 0 1px 1px -1px, rgba(0, 0, 0, .14) 0 1px 5px 0, rgba(0, 0, 0, .12) 0 1px 5px 0;
+}
+
+.submitButton:active {
+    background-color: #ffffff;
+}
+
+.buttonPart {
+    display: flex;
+}
+
+.shareButton {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 2px 24px;
+    background-color: #fff;
+    border-radius: 30px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: normal;
+    text-align: center;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+}
+
+.shareButton:active {
+    background-color: #efefef;
+    box-shadow: 0 4px 4px 3px rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+
+
+
+@media (max-width:740px) {
+    .container {
+        width: 90vw;
+        height: 70vh;
+    }
+
+    .submitButton {
+        margin-left: 5px;
+    }
+
+    .title {
+        font-size: 35px;
+        text-align: center;
+        line-height: 2.5rem;
+        margin-bottom: 15px;
+    }
+}
